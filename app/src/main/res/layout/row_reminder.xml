@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_reminder"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/padding_margin_medium"
+    app:cardCornerRadius="@dimen/padding_margin_xlarge"
+    app:strokeColor="@color/purple_200"
+    app:strokeWidth="0.5dp">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_time"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingTop="@dimen/padding_margin_xlarge"
+        android:paddingBottom="@dimen/padding_margin_xlarge"
+        android:text="12.05.2020\n12:30"
+        android:textSize="@dimen/text_xlarge" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_gravity="bottom"
+        android:layout_marginHorizontal="@dimen/padding_margin_xlarge"
+        android:background="@color/black" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/close_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/padding_margin_medium"
+        android:layout_marginEnd="@dimen/padding_margin_medium"
+        android:src="@drawable/ic_close"
+        app:iconTint="@color/black" />
+</com.google.android.material.card.MaterialCardView>

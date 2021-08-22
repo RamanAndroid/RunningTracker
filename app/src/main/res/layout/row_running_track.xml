@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/padding_margin_medium"
+    app:cardCornerRadius="@dimen/padding_margin_xlarge"
+    app:strokeColor="@color/purple_500"
+    app:strokeWidth="0.5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/padding_margin_xlarge"
+        android:paddingBottom="@dimen/padding_margin_xlarge">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/text_start_time_of_the_run"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding_margin_medium"
+            android:text="@string/start_time_of_the_run"
+            android:textColor="@color/purple_500"
+            android:textSize="@dimen/text_medium"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/start_time_of_the_run"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple_200"
+            android:textSize="@dimen/text_medium"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/text_start_time_of_the_run"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.04"
+            app:layout_constraintStart_toEndOf="@+id/text_start_time_of_the_run" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/text_running_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_margin_small"
+            android:text="@string/running_distance"
+            android:textColor="@color/purple_500"
+            android:textSize="@dimen/text_medium"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/text_start_time_of_the_run"
+            app:layout_constraintTop_toBottomOf="@+id/text_start_time_of_the_run" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/running_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple_200"
+            android:textSize="@dimen/text_medium"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/text_running_distance"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.04"
+            app:layout_constraintStart_toEndOf="@+id/text_running_distance" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/text_running_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_margin_small"
+            android:text="@string/running_time"
+            android:textColor="@color/purple_500"
+            android:textSize="@dimen/text_medium"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/text_running_distance"
+            app:layout_constraintTop_toBottomOf="@+id/text_running_distance" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/running_time6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple_200"
+            android:textSize="@dimen/text_medium"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.04"
+            app:layout_constraintStart_toEndOf="@+id/text_running_time"
+            app:layout_constraintTop_toTopOf="@+id/text_running_time" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

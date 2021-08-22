@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/main_menu"
+        android:checked="true"
+        android:title="@string/main_menu"
+        android:icon="@drawable/ic_home" />
+    <item
+        android:title="@string/reminder"
+        android:id="@+id/reminder_menu"
+        android:icon="@drawable/ic_notification" />
+    </group>
+</menu>
